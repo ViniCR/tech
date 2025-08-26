@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Notícia - Tekoha Consultoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="l.css">
+    <link rel="stylesheet" href="noticia-view-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Tekoha Consultoria</a>
+            </div>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="conteudos.html">Conteúdos</a></li>
+                <li><a href="certificacoes.html">Certificações</a></li>
+                <li><a href="index.html#portifolio">Parceria</a></li>
+                <li><a href="index.html#contato">OnStar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="noticia-main">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-container">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">></span>
+                    <a href="conteudos.html">Conteúdos</a>
+                    <span class="separator">></span>
+                    <span id="breadcrumb-title">Notícia</span>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <article class="noticia-artigo">
+                <header class="noticia-header">
+                    <div class="categoria-badge" id="noticia-categoria"></div>
+                    <h1 id="noticia-titulo">Carregando...</h1>
+                    <div class="noticia-meta">
+                        <div class="meta-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 2V6M16 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span id="noticia-data">Data</span>
+                        </div>
+                        <div class="meta-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M20 21V19C20 16.7909 18.2091 15 16 15H8C5.79086 15 4 16.7909 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span id="noticia-autor">Autor</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="noticia-imagem-principal">
+                    <img id="noticia-imagem" src="" alt="">
+                </div>
+
+                <div class="noticia-conteudo">
+                    <div class="noticia-resumo" id="noticia-resumo">
+                        Resumo da notícia...
+                    </div>
+                    
+                    <div class="noticia-texto" id="noticia-texto">
+                        Conteúdo da notícia será carregado aqui...
+                    </div>
+                </div>
+
+                <div class="compartilhar-section">
+                    <h3>Compartilhar esta notícia</h3>
+                    <div class="compartilhar-opcoes">
+                        <button class="btn-compartilhar" onclick="compartilharWhatsApp()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 14.02 2.6 15.9 3.64 17.47L2 22L6.72 20.42C8.22 21.35 10.04 21.9 12 21.9C17.52 21.9 22 17.42 22 11.9C22 6.38 17.52 1.9 12 1.9V2Z"/>
+                            </svg>
+                            WhatsApp
+                        </button>
+                        <button class="btn-compartilhar" onclick="copiarLink()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M10 13A5 5 0 0 0 14 17L17 14A5 5 0 0 0 17 4L14 7A5 5 0 0 0 10 13Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M14 11A5 5 0 0 0 10 7L7 10A5 5 0 0 0 7 20L10 17A5 5 0 0 0 14 11Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            Copiar Link
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Notícias Relacionadas -->
+            <section class="noticias-relacionadas">
+                <h2>Leia Também</h2>
+                <div class="noticias-relacionadas-grid" id="noticias-relacionadas">
+                    <!-- Notícias relacionadas serão inseridas aqui -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tekoha Consultoria. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="noticia-view-script.js"></script>
+</body>
+</html>

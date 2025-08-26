@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnStar - Login | Tekoha Consultoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="onstar-login-style.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <!-- Side Image/Info -->
+        <div class="login-side-info">
+            <div class="side-content">
+                <div class="logo-side">
+                    <h1>OnStar</h1>
+                    <p>Inteligência de Mercado</p>
+                </div>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <span>Análises Avançadas de Mercado</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <span>Segmentação Inteligente</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📈</div>
+                        <span>Relatórios em Tempo Real</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔮</div>
+                        <span>Previsões de Tendências</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Form -->
+        <div class="login-form-container">
+            <div class="login-form-wrapper">
+                <div class="login-header">
+                    <div class="logo-main">
+                        <h2>OnStar</h2>
+                        <span>by Tekoha</span>
+                    </div>
+                    <p>Acesse sua plataforma de inteligência de mercado</p>
+                </div>
+
+                <!-- Formulário de Login -->
+                <form id="login-form" class="login-form">
+                    <div class="form-group">
+                        <label for="email">E-mail ou usuário</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <div class="password-input-container">
+                            <input type="password" id="password" name="password" required>
+                            <button type="button" class="toggle-password" onclick="togglePassword()">
+                                <span id="password-icon">👁️</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="remember">
+                            <span class="checkmark"></span>
+                            Lembrar de mim
+                        </label>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Entrar</button>
+                </form>
+
+                <!-- Divider -->
+                <div class="divider">
+                    <span>ou</span>
+                </div>
+
+                <!-- Opções Alternativas -->
+                <div class="alternative-options">
+                    <button class="new-account-btn" onclick="mostrarNovoUsuario()">
+                        Criar nova conta
+                    </button>
+                    <button class="existing-license-btn" onclick="mostrarLicencaExistente()">
+                        Já possuo licença
+                    </button>
+                </div>
+
+                <!-- Links Footer -->
+                <div class="login-footer">
+                    <a href="index.html">← Voltar ao site</a>
+                    <div class="footer-links">
+                        <a href="#">Termos</a>
+                        <a href="#">Privacidade</a>
+                        <a href="#">Suporte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Novo Usuário -->
+    <div id="modal-novo-usuario" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Criar Nova Conta OnStar</h3>
+                <button class="close-modal" onclick="fecharModal('modal-novo-usuario')">&times;</button>
+            </div>
+            <form id="form-novo-usuario" class="modal-form">
+                <div class="form-group">
+                    <label for="nome-completo">Nome Completo</label>
+                    <input type="text" id="nome-completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-novo">E-mail</label>
+                    <input type="email" id="email-novo" required>
+                </div>
+                <div class="form-group">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" required>
+                </div>
+                <div class="form-group">
+                    <label for="cargo">Cargo</label>
+                    <input type="text" id="cargo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" required>
+                </div>
+                <button type="submit" class="modal-btn">Solicitar Acesso</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Licença Existente -->
+    <div id="modal-licenca-existente" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Ativar Licença Existente</h3>
+                <button class="close-modal" onclick="fecharModal('modal-licenca-existente')">&times;</button>
+            </div>
+            <form id="form-licenca-existente" class="modal-form">
+                <div class="form-group">
+                    <label for="codigo-licenca">Código da Licença</label>
+                    <input type="text" id="codigo-licenca" placeholder="ONSTR-XXXX-XXXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-licenca">E-mail de Ativação</label>
+                    <input type="email" id="email-licenca" required>
+                </div>
+                <button type="submit" class="modal-btn">Ativar Licença</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="onstar-login-script.js"></script>
+</body>
+</html>

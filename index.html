@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekoha Consultoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="l.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tekoha Consultoria</div>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="noticia-view.html?id=100">Sobre</a></li>
+                <li><a href="conteudos.html">Conteúdos</a></li>
+                <li><a href="certificacoes.html">Certificações</a></li>
+                <li><a href="javascript:void(0)" onclick="baixarDocumentacaoParceria()">Parceria</a></li>
+                <li><a href="onstar-login.html">OnStar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="busca-principal">
+        <section class="hero-busca">
+            <div class="busca-content">
+                <h1>Encontre o imóvel ideal para você</h1>
+                <p>Consultoria imobiliária e soluções para o mercado</p>
+
+                <div class="busca-container-principal">
+                    <!-- Botões de Tipo -->
+                    <div class="tipo-buttons">
+                        <button class="tipo-btn active" data-tipo="aluguel">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            Aluguel
+                        </button>
+                        <button class="tipo-btn" data-tipo="compra">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            Compra
+                        </button>
+                    </div>
+
+                    <!-- Barra de Busca Principal -->
+                    <div class="busca-input-container">
+                        <div class="busca-input-wrapper">
+                            <svg class="busca-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 10C21 16.075 16.075 21 10 21C7.425 21 5.1 20.025 3.35 18.45M3 10C3 3.925 7.925 -1 14 -1C16.575 -1 18.9 -0.025 20.65 1.55" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <input 
+                                type="text" 
+                                id="busca-regiao" 
+                                placeholder="Digite o bairro ou região que você procura..."
+                                autocomplete="off"
+                            >
+                            <div class="busca-sugestoes" id="sugestoes-container">
+                                <!-- Sugestões aparecerão aqui -->
+                            </div>
+                        </div>
+
+                        <button class="busca-btn-principal" id="btn-buscar">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 21L16.514 16.506M19 10.5C19 15.194 15.194 19 10.5 19S2 15.194 2 10.5 5.806 2 10.5 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            Buscar
+                        </button>
+                    </div>
+
+                    <!-- Filtros Rápidos -->
+                    <div class="filtros-rapidos">
+                        <span class="filtro-label">Filtros populares:</span>
+                        <button class="filtro-tag" data-filtro="centro">Centro</button>
+                        <button class="filtro-tag" data-filtro="zona-norte">Zona Norte</button>
+                        <button class="filtro-tag" data-filtro="zona-sul">Zona Sul</button>
+                        <button class="filtro-tag" data-filtro="zona-oeste">Zona Oeste</button>
+                        <button class="filtro-tag" data-filtro="comercial">Comercial</button>
+                        <button class="filtro-tag" data-filtro="residencial">Residencial</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="index-script.js"></script>
+</body>
+</html>

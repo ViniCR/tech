@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdos - Tekoha Consultoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="l.css">
+    <link rel="stylesheet" href="conteudos-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Tekoha Consultoria</a>
+            </div>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="#" class="active">Conteúdos</a></li>
+                <li><a href="certificacoes.html">Certificações</a></li>
+                <li><a href="index.html#portifolio">Parceria</a></li>
+                <li><a href="index.html#contato">OnStar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudos-main">
+        <!-- Header com Busca e Filtros -->
+        <section class="conteudos-header">
+            <div class="container">
+                <h1>Central de Conteúdos</h1>
+                <p>Últimas notícias e análises do mercado imobiliário</p>
+                
+                <!-- Barra de Busca -->
+                <div class="busca-container">
+                    <input type="text" id="busca-conteudo" placeholder="Buscar notícias..." class="busca-input">
+                    <button id="busca-btn" class="busca-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.514 16.506M19 10.5C19 15.194 15.194 19 10.5 19S2 15.194 2 10.5 5.806 2 10.5 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Filtros -->
+                <div class="filtros-container">
+                    <div class="categorias-filter">
+                        <button class="categoria-btn active" data-categoria="todas">Todas</button>
+                        <button class="categoria-btn" data-categoria="mercado">Mercado</button>
+                        <button class="categoria-btn" data-categoria="investimentos">Investimentos</button>
+                        <button class="categoria-btn" data-categoria="tecnologia">Tecnologia</button>
+                        <button class="categoria-btn" data-categoria="regulacao">Regulação</button>
+                        <button class="categoria-btn" data-categoria="tendencias">Tendências</button>
+                    </div>
+                    
+                    <div class="ordenacao-filter">
+                        <select id="ordenacao">
+                            <option value="relevante">Mais Relevante</option>
+                            <option value="recente">Mais Recente</option>
+                            <option value="antigo">Mais Antigo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid de Notícias -->
+        <section class="noticias-section">
+            <div class="container">
+                <div class="noticias-grid" id="noticias-grid">
+                    <!-- Notícias serão carregadas dinamicamente -->
+                </div>
+                
+                <!-- Botão Carregar Mais -->
+                <div class="carregar-mais-container">
+                    <button id="carregar-mais" class="btn-carregar-mais">Carregar Mais Notícias</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tekoha Consultoria. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="conteudos-script.js"></script>
+</body>
+</html>

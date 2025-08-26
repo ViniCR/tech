@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificações - Tekoha Consultoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="l.css">
+    <link rel="stylesheet" href="certificacoes-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Tekoha Consultoria</a>
+            </div>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#servicos">Conteúdos</a></li>
+                <li><a href="#" class="active">Certificações</a></li>
+                <li><a href="index.html#portifolio">Parceria</a></li>
+                <li><a href="index.html#contato">OnStar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="certificacoes-main">
+        <!-- Barra de Busca -->
+        <section class="busca-section">
+            <div class="container">
+                <h1>Certificações Profissionais</h1>
+                <p>Desenvolva suas habilidades com nossos cursos especializados</p>
+                <div class="busca-container">
+                    <input type="text" id="busca-input" placeholder="Buscar cursos..." class="busca-input">
+                    <button id="busca-btn" class="busca-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L16.514 16.506M19 10.5C19 15.194 15.194 19 10.5 19S2 15.194 2 10.5 5.806 2 10.5 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="certificacoes-layout">
+                <!-- Sidebar de Filtros -->
+                <aside class="filtros-sidebar">
+                    <h3>Filtros</h3>
+                    
+                    <div class="filtro-grupo">
+                        <h4>Categoria</h4>
+                        <div class="filtro-opcoes">
+                            <label><input type="checkbox" name="categoria" value="imobiliario"> Mercado Imobiliário</label>
+                            <label><input type="checkbox" name="categoria" value="investimento"> Investimentos</label>
+                            <label><input type="checkbox" name="categoria" value="tecnologia"> Tecnologia</label>
+                            <label><input type="checkbox" name="categoria" value="gestao"> Gestão</label>
+                            <label><input type="checkbox" name="categoria" value="juridico"> Jurídico</label>
+                        </div>
+                    </div>
+
+                    <div class="filtro-grupo">
+                        <h4>Nível</h4>
+                        <div class="filtro-opcoes">
+                            <label><input type="checkbox" name="nivel" value="iniciante"> Iniciante</label>
+                            <label><input type="checkbox" name="nivel" value="intermediario"> Intermediário</label>
+                            <label><input type="checkbox" name="nivel" value="avancado"> Avançado</label>
+                        </div>
+                    </div>
+
+                    <div class="filtro-grupo">
+                        <h4>Duração</h4>
+                        <div class="filtro-opcoes">
+                            <label><input type="checkbox" name="duracao" value="curta"> Menos de 5h</label>
+                            <label><input type="checkbox" name="duracao" value="media"> 5h - 10h</label>
+                            <label><input type="checkbox" name="duracao" value="longa"> Mais de 10h</label>
+                        </div>
+                    </div>
+
+                    <button class="limpar-filtros" id="limpar-filtros">Limpar Filtros</button>
+                </aside>
+
+                <!-- Grid de Cursos -->
+                <section class="cursos-grid-container">
+                    <div class="cursos-header">
+                        <div class="resultados-info">
+                            <span id="total-resultados">12 cursos disponíveis</span>
+                        </div>
+                        <div class="ordenacao">
+                            <label for="ordenar">Ordenar por:</label>
+                            <select id="ordenar">
+                                <option value="relevancia">Relevância</option>
+                                <option value="avaliacao">Melhor Avaliação</option>
+                                <option value="duracao">Duração</option>
+                                <option value="mais-recente">Mais Recente</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cursos-grid" id="cursos-grid">
+                        <!-- Os cursos serão gerados dinamicamente -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tekoha Consultoria. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="certificacoes-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Curso - Tekoha Consultoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="l.css">
+    <link rel="stylesheet" href="curso-view-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Tekoha Consultoria</a>
+            </div>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#servicos">Conteúdos</a></li>
+                <li><a href="certificacoes.html">Certificações</a></li>
+                <li><a href="index.html#portifolio">Parceria</a></li>
+                <li><a href="index.html#contato">OnStar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="curso-main">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-container">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">></span>
+                    <a href="certificacoes.html">Certificações</a>
+                    <span class="separator">></span>
+                    <span id="breadcrumb-title">Curso</span>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="curso-layout">
+                <!-- Conteúdo Principal -->
+                <section class="conteudo-principal">
+                    <!-- Header do Curso -->
+                    <div class="curso-header">
+                        <div class="curso-categoria-badge" id="curso-categoria"></div>
+                        <h1 id="curso-titulo">Carregando...</h1>
+                        <p id="curso-descricao">Descrição do curso...</p>
+                        <div class="curso-meta-info">
+                            <div class="meta-item">
+                                <span class="meta-label">Nível:</span>
+                                <span id="curso-nivel" class="meta-value">Iniciante</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Duração:</span>
+                                <span id="curso-duracao" class="meta-value">4h 30min</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Avaliação:</span>
+                                <span id="curso-avaliacao" class="meta-value">4.8 ⭐</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Abas de Navegação -->
+                    <div class="tabs-container">
+                        <button class="tab-btn active" data-tab="videos">Vídeos</button>
+                        <button class="tab-btn" data-tab="teste">Teste Final</button>
+                    </div>
+
+                    <!-- Conteúdo das Abas -->
+                    <div class="tab-content active" id="videos-content">
+                        <div class="video-player-container">
+                            <div class="video-player">
+                                <div id="video-placeholder">
+                                    <div class="video-thumbnail">
+                                        <div class="play-button" onclick="iniciarVideo(1)">▶</div>
+                                        <span>Clique para assistir o primeiro vídeo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3 id="video-atual-titulo">Selecione um vídeo para assistir</h3>
+                                <p id="video-atual-descricao">Escolha um tópico na lista ao lado para começar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="teste-content">
+                        <div class="teste-container">
+                            <div class="teste-header">
+                                <h3>Teste Final de Certificação</h3>
+                                <p>Responda às perguntas abaixo para obter seu certificado. É necessário acertar pelo menos 2 de 3 questões.</p>
+                            </div>
+                            <div id="teste-questoes"></div>
+                            <button id="enviar-teste" class="btn-enviar-teste" style="display: none;">Enviar Respostas</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sidebar com Lista de Vídeos -->
+                <aside class="videos-sidebar">
+                    <div class="sidebar-header">
+                        <h3>Conteúdo do Curso</h3>
+                        <div class="progresso-container">
+                            <div class="progresso-texto">Progresso: <span id="progresso-count">0/10</span></div>
+                            <div class="progresso-bar">
+                                <div class="progresso-fill" id="progresso-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videos-lista" id="videos-lista">
+                        <!-- Lista de vídeos será gerada dinamicamente -->
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- Modal do Diploma -->
+        <div id="diploma-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Parabéns! Você foi aprovado!</h3>
+                    <button class="close-modal" onclick="fecharModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Preencha seus dados para gerar o certificado:</p>
+                    <form id="diploma-form">
+                        <div class="form-group">
+                            <label for="nome-completo">Nome Completo:</label>
+                            <input type="text" id="nome-completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <button type="submit" class="btn-gerar-diploma">Gerar Certificado</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal do Certificado -->
+        <div id="certificado-modal" class="modal">
+            <div class="modal-content certificado-content">
+                <div class="certificado" id="certificado">
+                    <div class="certificado-header">
+                        <h2>CERTIFICADO DE CONCLUSÃO</h2>
+                        <div class="certificado-logo">Tekoha Consultoria</div>
+                    </div>
+                    <div class="certificado-body">
+                        <p>Certificamos que</p>
+                        <h3 id="certificado-nome">NOME DO ALUNO</h3>
+                        <p>concluiu com sucesso o curso</p>
+                        <h4 id="certificado-curso">NOME DO CURSO</h4>
+                        <div class="certificado-detalhes">
+                            <p>Carga horária: <span id="certificado-duracao">0h</span></p>
+                            <p>Data de conclusão: <span id="certificado-data"></span></p>
+                        </div>
+                    </div>
+                    <div class="certificado-footer">
+                        <div class="assinatura">
+                            <div class="linha-assinatura"></div>
+                            <p>Tekoha Consultoria</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificado-acoes">
+                    <button onclick="baixarCertificado()" class="btn-baixar">Baixar Certificado</button>
+                    <button onclick="fecharCertificado()" class="btn-fechar">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tekoha Consultoria. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="curso-view-script.js"></script>
+</body>
+</html>
