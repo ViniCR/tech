@@ -3,7 +3,7 @@
 const noticias = [
     {
         id: 1,
-        titulo: "Investimento Imobiliário em Manaus: Análise e Estratégias de Mercado",
+        titulo: "Investimento Imobiliário em Manaus!!!!! Análise e Estratégias de Mercado",
         resumo: "Análise detalhada do crescimento do setor imobiliário de Manaus, com destaque para as principais regiões metropolitanas e tendências futuras.",
         categoria: "mercado",
         autor: "João Silva",
