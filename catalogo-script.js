@@ -1,7 +1,7 @@
 
 // Função para download de documentação (usada no menu)
 function baixarDocumentacaoParceria() {
-    const confirmacao = confirm('Deseja fazer o download do modelo de documentação para parceria?');
+    const confirmacao = confirm('Deseja fazer o download do modelo de documentação para parceria? GIT ');
     if (confirmacao) {
         // Simular download de PDF
         const link = document.createElement('a');
