@@ -21,13 +21,13 @@
 }
 
 .breadcrumb a {
-    color: #667eea;
+    color: #159dcf;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
-    color: #5a67d8;
+    color: #159dcf;
 }
 
 .separator {
@@ -54,7 +54,7 @@
 /* Header do Curso */
 .curso-header {
     padding: 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #159dcf 0%, #764ba2 100%);
     color: white;
 }
 
@@ -125,13 +125,13 @@
 }
 
 .tab-btn.active {
-    color: #667eea;
-    border-bottom-color: #667eea;
+    color: #159dcf;
+    border-bottom-color: #159dcf;
 }
 
 .tab-btn:hover {
     background: #f8fafc;
-    color: #667eea;
+    color: #159dcf;
 }
 
 /* Conteúdo das Abas */
@@ -166,7 +166,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #159dcf 0%, #764ba2 100%);
     color: white;
     text-align: center;
 }
@@ -245,7 +245,7 @@
 
 .progresso-fill {
     height: 100%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: linear-gradient(90deg, #159dcf, #764ba2);
     transition: width 0.3s ease;
 }
 
@@ -275,7 +275,7 @@
 
 .video-item.ativo {
     background: #ebf8ff;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #159dcf;
 }
 
 .video-numero {
@@ -298,7 +298,7 @@
 }
 
 .video-item.ativo .video-numero {
-    background: #667eea;
+    background: #159dcf;
     color: white;
 }
 
@@ -376,7 +376,7 @@
 .opcao input[type="radio"] {
     width: 18px;
     height: 18px;
-    accent-color: #667eea;
+    accent-color: #159dcf;
 }
 
 .opcao label {
@@ -386,7 +386,7 @@
 }
 
 .btn-enviar-teste {
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #159dcf, #764ba2);
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -452,7 +452,7 @@
 }
 
 .close-modal:hover {
-    color: #667eea;
+    color: #159dcf;
 }
 
 .modal-body {
@@ -481,12 +481,12 @@
 
 .form-group input:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #159dcf;
 }
 
 .btn-gerar-diploma {
     width: 100%;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #159dcf, #764ba2);
     color: white;
     border: none;
     padding: 1rem;
@@ -510,13 +510,13 @@
     background: white;
     padding: 3rem;
     text-align: center;
-    border: 2px solid #667eea;
+    border: 2px solid #159dcf;
     border-radius: 15px;
     margin: 1.5rem;
 }
 
 .certificado-header h2 {
-    color: #667eea;
+    color: #159dcf;
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
@@ -541,7 +541,7 @@
 }
 
 .certificado-body h4 {
-    color: #667eea;
+    color: #159dcf;
     font-size: 1.4rem;
     margin: 1rem 0;
 }
@@ -587,12 +587,12 @@
 }
 
 .btn-baixar {
-    background: #667eea;
+    background: #159dcf;
     color: white;
 }
 
 .btn-baixar:hover {
-    background: #5a67d8;
+    background: #159dcf;
 }
 
 .btn-fechar {

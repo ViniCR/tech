@@ -38,12 +38,12 @@
 }
 
 .busca-input:focus {
-    border-color: #667eea;
+    border-color: #0a82ae;
 }
 
 .busca-btn {
     padding: 1rem 1.5rem;
-    background: #667eea;
+    background: #159dcf;
     color: white;
     border: none;
     border-radius: 0 50px 50px 0;
@@ -54,7 +54,7 @@
 }
 
 .busca-btn:hover {
-    background: #5a67d8;
+    background: #0a57ae;
 }
 
 /* Layout do Catálogo */
@@ -67,7 +67,7 @@
 
 /* Sidebar de Filtros */
 .filtros-sidebar {
-    background: white;
+    background: rgb(230, 230, 230);
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -113,13 +113,13 @@
 }
 
 .filtro-opcoes label:hover {
-    color: #667eea;
+    color: #0739ff;
 }
 
 .filtro-opcoes input[type="checkbox"] {
     width: 16px;
     height: 16px;
-    accent-color: #667eea;
+    accent-color: #0739ff;
 }
 
 .limpar-filtros {
@@ -135,7 +135,7 @@
 }
 
 .limpar-filtros:hover {
-    background: #667eea;
+    background: #159dcf;
     color: white;
 }
 
@@ -200,14 +200,14 @@
 .produto-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    border-color: #667eea;
+    border-color: #159dcf;
 }
 
 .produto-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #159dcf, #0a57ae);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,7 +237,7 @@
 .produto-preco {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #667eea;
+    color: #0a57ae;
     margin-bottom: 0.5rem;
 }
 
@@ -294,9 +294,9 @@
 }
 
 .pag-btn:hover:not(:disabled) {
-    background: #667eea;
+    background: #159dcf;
     color: white;
-    border-color: #667eea;
+    border-color: #159dcf;
 }
 
 .pag-btn:disabled {
@@ -325,15 +325,15 @@
 }
 
 .pag-numero:hover {
-    background: #667eea;
+    background: #159dcf;
     color: white;
-    border-color: #667eea;
+    border-color: #159dcf;
 }
 
 .pag-numero.active {
-    background: #667eea;
+    background: #159dcf;
     color: white;
-    border-color: #667eea;
+    border-color: #159dcf;
 }
 
 /* Logo no header da página de catálogo */
@@ -343,7 +343,7 @@
 }
 
 nav ul li a.active {
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #159dcf, #0a57ae);
     color: white;
 }
 

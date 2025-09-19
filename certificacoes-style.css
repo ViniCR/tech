@@ -14,7 +14,7 @@
 
 /* Barra de Busca */
 .busca-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #159dcf 0%, #159dcf 100%);
     padding: 3rem 0;
     color: white;
     text-align: center;
@@ -55,7 +55,7 @@
 
 .busca-btn {
     padding: 1rem 1.5rem;
-    background: #667eea;
+    background: #159dcf;
     color: white;
     border: none;
     cursor: pointer;
@@ -65,7 +65,7 @@
 }
 
 .busca-btn:hover {
-    background: #5a67d8;
+    background: #159dcf;
 }
 
 /* Layout dos Certificações */
@@ -125,13 +125,13 @@
 }
 
 .filtro-opcoes label:hover {
-    color: #667eea;
+    color: #159dcf;
 }
 
 .filtro-opcoes input[type="checkbox"] {
     width: 16px;
     height: 16px;
-    accent-color: #667eea;
+    accent-color: #159dcf;
 }
 
 .limpar-filtros {
@@ -147,7 +147,7 @@
 }
 
 .limpar-filtros:hover {
-    background: #667eea;
+    background: #159dcf;
     color: white;
 }
 
@@ -212,7 +212,7 @@
 .curso-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    border-color: #667eea;
+    border-color: #159dcf;
 }
 
 .curso-img {
@@ -245,7 +245,7 @@
 
 .curso-categoria {
     font-size: 0.8rem;
-    color: #667eea;
+    color: #159dcf;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0.5rem;

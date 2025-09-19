@@ -8,7 +8,7 @@
 
 /* Header de Conteúdos */
 .conteudos-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #159dcf 0%, #159dcf 100%);
     color: white;
     padding: 3rem 0;
     text-align: center;
@@ -87,7 +87,7 @@
 .categoria-btn:hover,
 .categoria-btn.active {
     background: white;
-    color: #667eea;
+    color: #159dcf;
 }
 
 .ordenacao-filter select {
@@ -152,7 +152,7 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background: #667eea;
+    background: #159dcf;
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
@@ -205,7 +205,7 @@
 
 .btn-carregar-mais {
     padding: 1rem 2rem;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #159dcf, #159dcf);
     color: white;
     border: none;
     border-radius: 10px;

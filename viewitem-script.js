@@ -10,7 +10,7 @@ const produtos = [
         categoria: "residencial",
         localizacao: "centro",
         status: "disponivel",
-        imagem: "https://via.placeholder.com/280x200/667eea/white?text=Residencial+1"
+        imagem: "https://i.pinimg.com/736x/cb/18/20/cb18202b7cc84c8e0c025e3f5b17a3a1.jpg"
     },
     {
         id: 2,

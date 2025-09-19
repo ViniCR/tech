@@ -1,11 +1,11 @@
 
 /* Additional styles that complement the main design */
 header {
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
 }
 
 nav .logo {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #f1ffff, #dbfffe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -44,10 +44,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #718096, #718096);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #5a67d8, #6b46c1);
+  background: linear-gradient(45deg, #718096, #718096);
 }

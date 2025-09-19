@@ -3,63 +3,73 @@
 const noticias = [
     {
         id: 1,
-        titulo: "Investimento Imobiliário em Manaus!!!!! Análise e Estratégias de Mercado",
-        resumo: "Análise detalhada do crescimento do setor imobiliário de Manaus, com destaque para as principais regiões metropolitanas e tendências futuras.",
+        titulo: "Expansão da Linha 2-Verde do Metrô de São Paulo deve impulsionar desenvolvimento imobiliário na Penha SP",
+        resumo: "São Paulo, 2025 – A expansão da Linha 2-Verde do Metrô de São Paulo, conectando a região da Vila Prudente à Penha, está em andamento e deve gerar impactos diretos na mobilidade urbana e no mercado imobiliário do bairro.",
         categoria: "mercado",
-        autor: "João Silva",
+        autor: "Redação - R.C",
         data: "2024-12-20",
-        imagem: "https://blog.123milhas.com/wp-content/uploads/2022/02/turismo-manaus-vista-aerea-manaus-conexao123.jpg",
-        conteudo: "O mercado imobiliário de Manaus, historicamente vinculado à sua função de polo industrial e comercial na região Norte do Brasil, apresenta dinâmicas complexas que exigem uma análise aprofundada para investidores que buscam mitigar riscos e maximizar retornos. A cidade, diferentemente de outros centros urbanos brasileiros, não apenas reage a ciclos econômicos nacionais, mas também é profundamente influenciada por políticas setoriais, como os incentivos fiscais da Zona Franca de Manaus (ZFM).\nEstratégias de Investimento e Segmentos de Mercado\nA complexidade do mercado local reside na sua segmentação. Cada setor exige uma tese de investimento distinta:\n\nSetor Residencial de Alto Padrão: A demanda por imóveis de alto padrão nas áreas nobres — como Adrianópolis, Ponta Negra e Dom Pedro — é impulsionada pela migração de executivos e profissionais qualificados que atuam nas indústrias do Polo Industrial de Manaus (PIM). Nesses bairros, o investimento em apartamentos de luxo e residências em condomínios fechados oferece retorno consistente via aluguel, com contratos de longo prazo atrelados a empresas. A alta liquidez nesse segmento é um diferencial, embora os preços por metro quadrado sejam os mais elevados da cidade.\nSetor de Lotes e Terrenos: A expansão urbana de Manaus, principalmente em direção às zonas Norte e Oeste, abre espaço para o investimento em lotes em condomínios planejados. Esta é uma estratégia de valorização de médio a longo prazo, baseada na expectativa de adensamento populacional e na melhoria da infraestrutura. A tese de investimento aqui é comprar em estágios iniciais de desenvolvimento, quando os preços são mais baixos, para capturar a valorização exponencial que acompanha a consolidação do projeto.\nImóveis Comerciais e Industriais (Logística): O motor da economia manauara é o Polo Industrial de Manaus. O investimento em galpões logísticos e armazéns localizados em eixos estratégicos como as avenidas Rodrigo Otávio e Autaz Mirim, que conectam a cidade ao porto e ao aeroporto, oferece alta rentabilidade. A demanda por esses ativos é constante, impulsionada pela necessidade das indústrias de otimizar a cadeia de suprimentos. O rendimento de aluguel é o foco principal, e a valorização do imóvel é um benefício secundário.\nAnálise de Riscos e Fatores Determinantes\nA autoridade no mercado imobiliário manauara é construída sobre o entendimento dos seus riscos e das suas vantagens competitivas:\n\nDependência da ZFM: A saúde do mercado imobiliário local está intrinsecamente ligada à manutenção dos incentivos fiscais da Zona Franca. Oscilações políticas ou mudanças na legislação podem impactar diretamente a confiança dos investidores e a demanda por imóveis comerciais e industriais.\nInfraestrutura e Logística: A topografia e a hidrografia da região impõem desafios logísticos únicos. A conectividade da cidade com outras regiões do país, majoritariamente via fluvial e aérea, limita o desenvolvimento de alguns setores. A carência de infraestrutura em áreas de expansão pode atrasar a valorização de terrenos e exigir investimentos adicionais.\nRisco Ambiental: A proximidade com a Floresta Amazônica impõe regulamentações ambientais rigorosas, que devem ser consideradas no planejamento de qualquer empreendimento. A titulação de terras e a regularização fundiária são aspectos críticos que exigem diligência prévia para evitar problemas legais.\nO mercado imobiliário de Manaus não se comporta de maneira uniforme. A decisão de investimento deve ser pautada por uma análise segmentada, considerando a finalidade do imóvel e os fatores macroeconômicos e setoriais que definem a dinâmica de oferta e demanda de cada nicho."
+        imagem: "https://i.pinimg.com/1200x/dc/35/61/dc35613f6373aa3c7f3a824366dc9922.jpg",
+        conteudo: ""
     },
     {
         id: 2,
-        titulo: "Fundos Imobiliários: Oportunidade de Investimento",
-        resumo: "Guia completo sobre investimentos em FIIs, com análise de rentabilidade e perspectivas para 2025.",
+        titulo: "RC/SP Imóveis inicia operações em São Paulo com modelo que pretende a",
+        resumo: "A RC/SP Imóveis planeja combinar desenvolvimento com mecanismos de incentivo financeiro e inteligência de mercado.",
         categoria: "investimentos",
-        autor: "Maria Santos",
-        data: "2024-12-18",
-        imagem: "https://via.placeholder.com/400x250/764ba2/white?text=FIIs+Investimento",
-        conteudo: "Os Fundos de Investimento Imobiliário (FIIs) continuam sendo uma das principais alternativas de investimento no mercado brasileiro. Com yields atrativos e diversificação de portfólio, os FIIs apresentaram rentabilidade média de 12% em 2024..."
+        autor: "Redação - R.C",
+        data: "2025-07-20",
+        imagem: "https://i.pinimg.com/736x/ca/a7/7f/caa77f723fd3a1734d007ce13c9c7873.jpg",
+        conteudo: ""
     },
     {
         id: 3,
-        titulo: "Tecnologia PropTech Revoluciona o Setor",
+        titulo: "Digitalização e PropTechs integradas: transformações estratégicas no setor imobiliário em 2026",
         resumo: "Como as startups de tecnologia imobiliária estão transformando a forma de comprar, vender e alugar imóveis.",
         categoria: "tecnologia",
-        autor: "Carlos Oliveira",
+        autor: "Redação - R.C",
         data: "2024-12-15",
-        imagem: "https://via.placeholder.com/400x250/8b5cf6/white?text=PropTech",
-        conteudo: "A revolução tecnológica no setor imobiliário está acelerando. As PropTechs brasileiras captaram mais de R$ 500 milhões em investimentos em 2024, desenvolvendo soluções inovadoras para compra, venda e gestão de imóveis..."
+        imagem: "https://i.pinimg.com/736x/04/26/25/042625d06502d0a5e4feb7c2a6979289.jpg",
+        conteudo: ""
     },
     {
         id: 4,
-        titulo: "Nova Regulamentação do Marco Legal das Startups",
-        resumo: "Impactos da nova legislação no mercado imobiliário e oportunidades para investidores.",
+        titulo: "Sustentabilidade e ESG no setor imobiliário",
+        resumo: "Discute-se a relação entre eficiência energética, valorização de ativos, captação de investimentos e regulamentação emergente, além dos impactos financeiros e sociais dessas práticas.",
         categoria: "regulacao",
-        autor: "Ana Costa",
+        autor: "Redação - R.C",
         data: "2024-12-12",
-        imagem: "https://via.placeholder.com/400x250/06b6d4/white?text=Regulacao",
-        conteudo: "O Marco Legal das Startups trouxe importantes mudanças para o ecossistema de inovação brasileiro. No setor imobiliário, as novas regras facilitam a criação de empresas de base tecnológica e oferecem incentivos fiscais..."
+        imagem: "https://i.pinimg.com/736x/60/23/16/602316ae0707bc4c8c7307fcd51833ea.jpg",
+        conteudo: ""
     },
     {
         id: 5,
-        titulo: "Tendências Arquitetônicas para 2025",
-        resumo: "Sustentabilidade, espaços multiuso e tecnologia integrada lideram as tendências do próximo ano.",
+        titulo: "Transformação do espaço urbano e moradia híbrida: Uma análise de novas soluções",
+        resumo: "O estudo enfoca a adoção de modelos de moradia híbrida, a valorização de regiões periféricas e cidades médias, e a readequação de edifícios comerciais para usos mistos, destacando oportunidades e desafios estratégicos para incorporadoras e investidores.",
         categoria: "tendencias",
-        autor: "Pedro Almeida",
-        data: "2024-12-10",
-        imagem: "https://via.placeholder.com/400x250/10b981/white?text=Tendencias+2025",
-        conteudo: "As tendências arquitetônicas para 2025 apontam para uma maior integração entre sustentabilidade e tecnologia. Edifícios inteligentes, uso de materiais sustentáveis e espaços multiuso são as principais apostas do setor..."
+        autor: "Redação - R.C",
+        data: "2025-03-21",
+        imagem: "https://i.pinimg.com/1200x/47/d9/e7/47d9e70e26a00d442458273adb303ced.jpg",
+        conteudo: ""
     },
     {
         id: 6,
-        titulo: "Financiamento Imobiliário: Novas Modalidades",
-        resumo: "Banco Central aprova novas modalidades de crédito imobiliário com taxas mais competitivas.",
+        titulo: "Artigo sobre a reforma do Imposto de Renda no Brasil",
+        resumo: "A medida estabelece sobretaxas incidentes sobre rendimentos de capital — dividendos, ganhos de capital e aplicações financeiras — que ultrapassam determinados limiares de renda",
         categoria: "mercado",
-        autor: "Lucia Ferreira",
-        data: "2024-12-08",
-        imagem: "https://via.placeholder.com/400x250/f59e0b/white?text=Financiamento",
-        conteudo: "O Banco Central do Brasil aprovou novas modalidades de financiamento imobiliário que prometem democratizar o acesso ao crédito. As novas regras incluem prazos estendidos e taxas de juros mais atrativas..."
+        autor: "Redação - R.C",
+        data: "2024-05-08",
+        imagem: "https://i.pinimg.com/736x/d8/80/7b/d8807b7a06e86030427afe53ea5d1aed.jpg",
+        conteudo: ""
+    },
+    {
+        id: 7,
+        titulo: "Artigo sobre a reforma do Imposto de Renda no Brasil",
+        resumo: "A medida estabelece sobretaxas incidentes sobre rendimentos de capital — dividendos, ganhos de capital e aplicações financeiras — que ultrapassam determinados limiares de renda",
+        categoria: "mercado",
+        autor: "Redação - R.C",
+        data: "2024-05-08",
+        imagem: "https://i.pinimg.com/736x/d8/80/7b/d8807b7a06e86030427afe53ea5d1aed.jpg",
+        conteudo: ""
     }
 ];
 

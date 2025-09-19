@@ -10,18 +10,18 @@ html {
   width: 100%;
   scroll-behavior: smooth;
 }
-
+/* Fundo chapado - reflete outras abas */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff; /*?*/
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
   min-height: 100vh;
 }
 
 /* Header Styles */
 header {
-  background: rgba(255, 255, 255, 0.95);
+  background: #159dcf;
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
@@ -39,11 +39,12 @@ nav {
   padding: 1rem 2rem;
 }
 
-nav .logo {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: #4a5568;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+nav .logo span {
+  font-weight: 500;         /* menos pesado, deixa mais elegante */
+  font-size: 1.4rem;        /* levemente menor que o original */
+  color: #f5f5f5;           /* branco suave, não tão puro */
+  text-shadow: none;        /* sem sombra para ficar clean */
+  letter-spacing: 0.5px;    /* pequeno respiro entre letras */
 }
 
 nav ul {
@@ -52,19 +53,20 @@ nav ul {
   gap: 2rem;
 }
 
-nav ul li a {
+/* texto do cabeçalho*/
+nav ul li a { 
   text-decoration: none;
-  color: #4a5568;
+  color: #ffffff;
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   transition: all 0.3s ease;
   position: relative;
 }
-
+/* texto do cabeçalho hover*/
 nav ul li a:hover {
-  background: linear-gradient(45deg, #667eea, #764ba2);
-  color: white;
+  background: linear-gradient(45deg, #159dcf, #0a57ae);
+  color: rgb(255, 255, 255);
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
@@ -78,6 +80,39 @@ nav ul li a:hover {
   padding-top: 100px;
 }
 
+.logo-img {
+    height: 60px;              /* ajuste conforme a altura do header */
+    width: auto;
+    object-fit: contain;
+
+    /* Borda mínima preta */
+    border: 1px solid #000;
+
+    /* Sombra apenas inferior */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+
+    /* Animação de entrada suave */
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: aparecerLogo 0.8s ease forwards;
+
+    transition: all 0.3s ease; /* transição p/ hover */
+}
+
+/* Animação inicial */
+@keyframes aparecerLogo {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover com brilho branco */
+.logo-img:hover {
+
+    transform: scale(1.05);
+}
+
 .hero-busca {
   width: 100%;
   max-width: 1200px;
@@ -86,26 +121,27 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/*Titulo-Chamada da Pagina*/
 .busca-content h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  color: white;
+  color: rgb(101, 101, 101);
   margin-bottom: 1rem;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  animation: fadeInUp 1s ease-out;
+  text-shadow: 0 4px 8px rgba(84, 97, 135, 0.21);
+  animation: fadeInUp 3s ease-out;
 }
-
+/*Sub-Titulo-Chamada da Pagina*/
 .busca-content p {
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(33, 95, 166, 0.9);
   margin-bottom: 3rem;
-  animation: fadeInUp 1s ease-out 0.2s both;
+  animation: fadeInUp 3s ease-out 0.2s both;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -113,15 +149,15 @@ nav ul li a:hover {
   }
 }
 
-/* Container Principal de Busca */
+/* Container-BOX Principal de Busca */
 .busca-container-principal {
-  background: white;
+  background: rgb(192, 192, 192);
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   max-width: 800px;
   margin: 0 auto;
-  animation: fadeInUp 1s ease-out 0.4s both;
+  animation: fadeInUp 3s ease-out 0.4s both;
 }
 
 /* Botões de Tipo */
@@ -139,7 +175,7 @@ nav ul li a:hover {
   padding: 1rem 2rem;
   border: 2px solid #e2e8f0;
   background: white;
-  color: #4a5568;
+  color: #60684a;
   border-radius: 50px;
   font-weight: 600;
   font-size: 1rem;
@@ -150,16 +186,16 @@ nav ul li a:hover {
 }
 
 .tipo-btn:hover {
-  border-color: #667eea;
-  color: #667eea;
+  border-color: #159dcf;
+  color: #26035f;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
 }
 
 .tipo-btn.active {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #159dcf, #159dcf);
   color: white;
-  border-color: #667eea;
+  border-color: #159dcf;
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
@@ -169,11 +205,13 @@ nav ul li a:hover {
   gap: 1rem;
   margin-bottom: 2rem;
   align-items: flex-start;
+
 }
 
 .busca-input-wrapper {
   flex: 1;
   position: relative;
+
 }
 
 .busca-input-wrapper .busca-icon {
@@ -188,24 +226,24 @@ nav ul li a:hover {
 #busca-regiao {
   width: 100%;
   padding: 1.25rem 1.25rem 1.25rem 3.5rem;
-  border: 2px solid #e2e8f0;
+  border: 2px solid #2a2a2a;
   border-radius: 15px;
   font-size: 1.1rem;
   outline: none;
   transition: all 0.3s ease;
-  background: #f8fafc;
+  background: #fffffff5;
 }
 
 #busca-regiao:focus {
-  border-color: #667eea;
+  border-color: #414141;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
   background: white;
 }
 
 .busca-btn-principal {
   padding: 1.25rem 2rem;
-  background: linear-gradient(45deg, #667eea, #764ba2);
-  color: white;
+  background: linear-gradient(45deg, #ebebeb, #e7e7e7);
+  color: rgb(18, 18, 18);
   border: none;
   border-radius: 15px;
   font-weight: 600;
@@ -220,7 +258,9 @@ nav ul li a:hover {
 
 .busca-btn-principal:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 1px 1px rgba(6, 188, 224, 0);
+  background: linear-gradient(45deg, #159dcf, #159dcf);
+  color: rgb(255, 255, 255);
 }
 
 /* Sugestões de Busca */
@@ -262,12 +302,12 @@ nav ul li a:hover {
 }
 
 .sugestao-icon {
-  color: #667eea;
+  color: #159dcf;
   flex-shrink: 0;
 }
 
 .sugestao-text {
-  color: #2d3748;
+  color: #718096;
   font-weight: 500;
 }
 
@@ -286,7 +326,7 @@ nav ul li a:hover {
 }
 
 .filtro-label {
-  color: #718096;
+  color: #ffffff;
   font-weight: 500;
   font-size: 0.9rem;
 }
@@ -304,14 +344,14 @@ nav ul li a:hover {
 }
 
 .filtro-tag:hover {
-  background: #667eea;
+  background: #159dcf;
   color: white;
-  border-color: #667eea;
+  border-color: #159dcf;
   transform: translateY(-1px);
 }
 
 .filtro-tag.active {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #718096, #718096);
   color: white;
   border-color: #667eea;
 }

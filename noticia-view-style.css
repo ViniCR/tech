@@ -3,12 +3,12 @@
 .noticia-main {
     margin-top: 100px;
     min-height: calc(100vh - 100px);
-    background: #f8fafc;
+    background: #ffffff;
 }
 
-/* Breadcrumb */
+/* Breadcrumb 
 .breadcrumb-container {
-    background: white;
+    background: rgb(189, 189, 189);
     border-bottom: 1px solid #e2e8f0;
     padding: 1rem 0;
 }
@@ -21,18 +21,18 @@
 }
 
 .breadcrumb a {
-    color: #667eea;
+    color: #159dcf;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
-    color: #5a67d8;
+    color: #159dcf;
 }
 
 .separator {
     color: #a0aec0;
-}
+}*/
 
 /* Artigo Principal */
 .noticia-artigo {
@@ -53,7 +53,7 @@
 }
 
 .categoria-badge {
-    background: #667eea;
+    background: #04bbfe;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 25px;
@@ -67,15 +67,15 @@
 .noticia-header h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2d3748;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 0rem;
+    line-height: 1;
 }
 
 .noticia-meta {
     display: flex;
     gap: 2rem;
-    color: #718096;
+    color: #353535;
     font-size: 0.9rem;
 }
 
@@ -170,10 +170,48 @@
     transition: all 0.3s ease;
 }
 
+.btn-home {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid #e2e8f0;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;    /* fixo no scroll */
+    position: fixed;
+    top: 105px;   /* distância da parte inferior */
+    right: 1150px;    /* distância da lateral direita */
+    z-index: 1000;  /* sempre por cima */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-home:hover {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid #e2e8f0;
+    color: #3966e0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;    /* fixo no scroll */
+    position: fixed;
+    top: 105px;   /* distância da parte inferior */
+    right: 1150px;    /* distância da lateral direita */
+    z-index: 1000;  /* sempre por cima */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 .btn-compartilhar:hover {
-    background: #667eea;
+    background: #159dcf;
     color: white;
-    border-color: #667eea;
+    border-color: #159dcf;
 }
 
 /* Notícias Relacionadas */
